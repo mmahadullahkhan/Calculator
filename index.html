@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+        integrity="sha512-CUg7VUZCK6/iO7VJ8T6a4gP95ySCsHnp7oy4GE4Jvj/Zz1Zd+2zyoJvHi8Wjmgp7E0+Unf9J0Cj8OG1ltzCRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4"><input type="text" name="result" id="result" style="width:100%" readonly></th>
+            </tr>
+            <tr>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendNumber(1)">1</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendNumber(2)">2</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendNumber(3)">3</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendOperator('+')">+</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="clearResult()">C</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendNumber(4)">4</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendNumber(5)">5</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendNumber(6)">6</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendOperator('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendNumber(7)">7</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendNumber(8)">8</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendNumber(9)">9</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendOperator('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendNumber(0)">0</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendDecimal()">.</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="calculateResult()">=</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="appendOperator('*')">*</button></td>
+                <td><button class="btn btn-dark w-100 text-center" onclick="deleteLastCharacter()">DEL</button></td>
+
+            </tr>
+        </thead>
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>
